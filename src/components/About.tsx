@@ -26,11 +26,11 @@ const About: React.FC = () => {
     <section id="about">
       <h2 data-aos="fade-up">Sobre Mim</h2>
       <p data-aos="fade-up">
-        Desenvolvedor Full Stack, em formação em Desenvolvimento de Sistemas
-        pela Faculdade Estacio. Apaixonado por tecnologia e sempre em busca de
-        novos conhecimentos para aprimorar minhas habilidades. Tenho experiência
-        em diversas tecnologias, incluindo IA e desenvolvimento web. Estou
-        sempre aberto a novos desafios e oportunidades para crescer
+        Desenvolvedor Full Stack, Estudante em Analise e Desenvolvimento de
+        Sistemas pela Faculdade Estacio. Apaixonado por tecnologia e sempre em
+        busca de novos conhecimentos para aprimorar minhas habilidades. Tenho
+        experiência em diversas tecnologias, incluindo IA e desenvolvimento web.
+        Estou sempre aberto a novos desafios e oportunidades para crescer
         profissionalmente.
       </p>
       <a
