@@ -1,0 +1,31 @@
+#about {
+  padding: 80px 20px;
+  background-color: var(--cor-primaria-clara);
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about .btn {
+  font-size: 18px;
+  color: var(--cor-primaria);
+  padding-bottom: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#about hr {
+  border-top: 1px solid var(--cor-primaria);
+  width: 4rem;
+}
