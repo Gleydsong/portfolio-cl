@@ -14,8 +14,8 @@ const About: React.FC = () => {
       <h2 data-aos="fade-up">Sobre Mim</h2>
       <p data-aos="fade-up">Olá meu nome é Gleydson Gibson</p>
       <a
-        href="Kamilly-curriculo-full-stack.pdf"
-        download="Kamilly-curriculo-full-stack.pdf"
+        href={`${import.meta.env.BASE_URL}curriculo.pdf`}
+        download="curriculo.pdf"
         className="btn"
         data-aos="fade-up"
       >
