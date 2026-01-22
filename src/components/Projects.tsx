@@ -6,6 +6,7 @@ import project1 from "../assets/images/project1.png";
 import project2 from "../assets/images/project2.png";
 import project3 from "../assets/images/project3.png";
 import calculadora from "../assets/images/calculadora.png";
+import galery from "../assets/images/galery.png";
 
 import React, { useEffect, useState } from "react";
 
@@ -38,8 +39,13 @@ const Projects: React.FC = () => {
               onClick={() => openImage(project1)}
               style={{ cursor: "pointer" }}
             />
-            <h3>Site de compra e venda</h3>
-            <p>Sistema interno para compra e venda de produtos e serviços</p>
+            <h3>App de HelpDesk</h3>
+            <p>
+              Um sistema de Help-Desk é uma aplicação para registrar, organizar
+              e acompanhar chamados de suporte, conectando clientes a técnicos,
+              com serviços e agendamento de horários — do “pedido” até o
+              “encerramento”.
+            </p>
           </div>
           <div className="project-card">
             <img
@@ -91,17 +97,25 @@ const Projects: React.FC = () => {
               onClick={() => openImage(calculadora)}
               style={{ cursor: "pointer" }}
             />
-            <h3>To-Do List</h3>
-            <p>
-              Um aplicativo de Lista de Tarefas que permite se manter organizado
-              e produtivo com facilidade!
-            </p>
-            <a
-              href="https://kamilly-quadros.github.io/to-do-list/"
-              className="btn"
-            >
+            <h3>Calculadora</h3>
+            <p>Uma calculadora simples desenvolvida em React Via CDN.</p>
+            <a href="https://gleydsong.github.io/calculadora/" className="btn">
               Ver Projeto
             </a>
+          </div>
+          <div className="project-card">
+            <img
+              src={galery}
+              alt="Novo Projeto"
+              loading="lazy"
+              onClick={() => openImage(galery)}
+              style={{ cursor: "pointer" }}
+            />
+            <h3>Galeria-Plus</h3>
+            <p>
+              Um projeto feito em React para exibir uma galeria de imagens com
+              funcionalidades avançadas.
+            </p>
           </div>
         </div>
       </section>
