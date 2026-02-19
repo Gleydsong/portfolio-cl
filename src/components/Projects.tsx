@@ -1,6 +1,4 @@
-import "aos/dist/aos.css";
 import "../styles/components/Projects.css";
-import AOS from "aos";
 import petshop from "../assets/images/petshop.png";
 import project1 from "../assets/images/project1.png";
 import project2 from "../assets/images/project2.png";
@@ -8,7 +6,7 @@ import project3 from "../assets/images/project3.png";
 import calculadora from "../assets/images/calculadora.png";
 import galery from "../assets/images/galery.png";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Projects: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,10 +19,6 @@ const Projects: React.FC = () => {
     setIsModalOpen(false);
     setModalImage(null);
   };
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   return (
     <>
@@ -65,7 +59,7 @@ const Projects: React.FC = () => {
           <div className="project-card">
             <img
               src={project3}
-              alt="Projeto 2"
+              alt="Api de Reembolso"
               loading="lazy"
               onClick={() => openImage(project3)}
               style={{ cursor: "pointer" }}
@@ -78,7 +72,7 @@ const Projects: React.FC = () => {
           <div className="project-card">
             <img
               src={petshop}
-              alt="Projeto 2"
+              alt="Projeto Pet Shop"
               loading="lazy"
               onClick={() => openImage(petshop)}
               style={{ cursor: "pointer" }}
@@ -92,7 +86,7 @@ const Projects: React.FC = () => {
           <div className="project-card">
             <img
               src={calculadora}
-              alt="To-Do List"
+              alt="Projeto Calculadora"
               loading="lazy"
               onClick={() => openImage(calculadora)}
               style={{ cursor: "pointer" }}
@@ -106,7 +100,7 @@ const Projects: React.FC = () => {
           <div className="project-card">
             <img
               src={galery}
-              alt="Novo Projeto"
+              alt="Projeto Galeria-Plus"
               loading="lazy"
               onClick={() => openImage(galery)}
               style={{ cursor: "pointer" }}
@@ -122,7 +116,7 @@ const Projects: React.FC = () => {
       {isModalOpen && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={modalImage!} alt="Imagem ampliada" />
+            {modalImage && <img src={modalImage} alt="Imagem ampliada" />}
             <button onClick={closeModal} className="close-button">
               ×
             </button>

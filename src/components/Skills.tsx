@@ -1,15 +1,7 @@
-import AOS from "aos";
-import React, { useEffect } from "react";
-
-
+import React from "react";
 import "../styles/components/Skills.css";
-import "aos/dist/aos.css";
 
 const Skills: React.FC = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   return (
     <section id="skills" data-aos="fade-up">
       <h2>Habilidades</h2>

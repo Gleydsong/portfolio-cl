@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
+    "antigravity-awesome-skills": "^5.8.0",
     "aos": "^2.3.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"

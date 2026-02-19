@@ -1,14 +1,7 @@
-import AOS from "aos";
-import React, { useEffect } from "react";
-
-import "aos/dist/aos.css";
+import React from "react";
 import "../styles/components/About.css";
 
 const About: React.FC = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   const handleDownload = async () => {
     const response = await fetch(`${import.meta.env.BASE_URL}curriculo.pdf`);
     const blob = await response.blob();

@@ -1,36 +1,46 @@
 #skills {
-  padding: 80px 20px;
-  background-color: var(--cor-primaria-clara);
+  padding: 100px 20px;
+  background-color: var(--cor-primaria-clara, #f8f9fa);
 }
 
 #skills h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: 3rem;
   text-align: center;
+  color: var(--cor-secundaria-escura);
+  letter-spacing: -1px;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 20px;
   justify-items: center;
   align-items: center;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .skill-item {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
-  background-color: var(--cor-primaria);
-  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  background-color: var(--cor-primaria, #ffffff);
+  border-radius: 50px;
   text-align: center;
   color: var(--cor-secundaria-escura);
-  transition: background-color 0.3s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: default;
+  white-space: nowrap;
 }
 
 .skill-item:hover {
   background-color: var(--cor-secundaria);
   color: var(--cor-primaria);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: transparent;
 }

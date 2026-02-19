@@ -1,14 +1,7 @@
-import AOS from "aos";
-import React, { useEffect } from "react";
-
-import "aos/dist/aos.css";
+import React from "react";
 import "../styles/components/Hero.css";
 
 const Hero: React.FC = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   return (
     <div id="hero">
       <div className="hero-background"></div>
@@ -24,3 +17,4 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
