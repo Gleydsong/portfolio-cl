@@ -17,9 +17,39 @@ code {
 }
 
 :root {
-  --cor-primaria: #c9fff4;
-  --cor-primaria-clara: #10343b;
-  --cor-secundaria: #0a1419;
-  --cor-secundaria-escura: #040709;
-  --detalhe: #45ffd2;
+  /* Fundo e Superfícies (Escala de Profundidade) */
+  --bg-base: #050a0c;             /* Fundo mais profundo */
+  --bg-surface: #0d161a;          /* Superfícies secundárias */
+  --bg-card: #121e23;             /* Cards e elementos elevados */
+  
+  /* Cores de Marca (Acento) */
+  --detalhe: #45ffd2;             /* Ciano principal */
+  --detalhe-hover: #33e6bc;       /* Ciano mais escuro para hover */
+  --detalhe-subtle: rgba(69, 255, 210, 0.1); /* Fundo sutil para tags/destaques */
+  
+  /* Tipografia (Escala de Contraste) */
+  --text-high: #e6f1f0;           /* Títulos e texto principal */
+  --text-medium: #a0b2b0;         /* Parágrafos e descrições */
+  --text-low: #6b7c7a;            /* Texto mudo/metadados */
+
+  /* Bordas e Linhas */
+  --border-light: rgba(255, 255, 255, 0.08);
+  
+  /* Mapeamento para Variáveis Antigas (Evitar quebra de layout) */
+  --cor-primaria: var(--text-high);
+  --cor-primaria-clara: var(--bg-surface);
+  --cor-secundaria: var(--bg-surface);
+  --cor-secundaria-escura: var(--bg-base);
+}
+
+body {
+  margin: 0;
+  font-family:
+    'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-medium);
+  background-color: var(--bg-base);
+  line-height: 1.6;
 }
